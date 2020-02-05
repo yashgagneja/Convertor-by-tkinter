@@ -12,12 +12,12 @@ window.title("Welcome to tkinter")
 window.geometry("540x100")
 def from_kg2():
      pound=float(e2_value.get())*2.20462
-     pound=str(str(pound)+' pound')
+     pound=str(str(pound)+'')
      t1.delete("1.0", END)
      t1.insert(END,pound)
 def from_kg3():
      ounce=float(e2_value.get())*35.274
-     ounce=str(str(ounce)+' ounce')
+     ounce=str(str(ounce)+' ')
      t1.delete("1.0", END)
      t1.insert(END,ounce)
 
@@ -25,12 +25,12 @@ def from_kg3():
     
 def from_kg1():
     gram=float(e2_value.get())*1000
-    gram=str(str(gram)+' grams')
+    gram=str(str(gram)+'')
     t1.delete("1.0", END)
     t1.insert(END,gram)
     
   
-e1=Label(window,text="Kg")
+e1=Label(window,text="")
 e1.grid(row=0,column=0)
 
 e2_value=StringVar()
